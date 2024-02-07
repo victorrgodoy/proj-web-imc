@@ -1,10 +1,7 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* navbar */
 .logo {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 600;
     margin: 0 0;
     padding: 0 0;
     align-self: center;
@@ -20,8 +17,9 @@ nav ul {
 }
 
 nav li{
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 17px;
+    padding-top: 7px;
+    color: #404040;
 }
 
 nav a {
@@ -34,10 +32,123 @@ a:hover {
 }
 
 
+
+
+/* section 1*/
+
+
+
+/* left */
 section {
     background-color: #DBF6ED;
+    color: #404040;
 }
 
-section container-flex {
-    display: flex;
+section p {
+    font-size: 20px;
+    font-weight: 300;
 }
+
+section h1 {
+    font-weight: bold;
+}
+
+
+.container-left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-left > div {
+
+    margin: 0 0;
+    padding: 20px 0;
+}
+
+
+.container-left a{
+    color: #7296FD;
+    text-decoration: none;
+}
+
+.container-left a:hover {
+    color: #41878B;
+}
+
+
+
+
+
+
+
+
+
+/* right */
+.container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container-right > div {
+    background-color: #96CEC6;
+    height: 563px;
+    border-radius: 20px;
+    
+
+}
+
+.container-right p{
+    font-weight: bold;
+    padding: 30px 70px;
+    margin: 0 0;
+}
+
+.container-right form{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 70px;
+    margin: 0 0;
+}
+
+.container-right input{
+    border-radius: 10px;
+    border: 0px;
+  
+}
+
+.container-right button{
+    border-radius: 10px;
+    border: 0px;
+    background-color: #276773;
+    width: 50%;
+    height: 50px;
+    font-size: 15px;
+    color: #F7FEF9;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.container-right button:hover {
+    background-color: white;
+    color: #276773;
+}
+
+
+/* mid */
+
+.container-mid {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+    justify-content: space-between;
+
+    
+}
+
+

@@ -8,10 +8,11 @@
   </head>
     <title>Home</title>
 </head>
-<body>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
     <header>
     <div class="container" style="width: 80%;">
-    <div class="row gx-5 py-4" style="height: 100px;">
+    <div class="row gx-5 py-3" style="height: 70px;">
     <div class="col-3 p-0"><p class="logo">IMC Saudável</p></div>
     <div class="col-4 p-0"></div>
     <div class="col-5 p-0">
@@ -19,7 +20,7 @@
         <ul>
             <li><a href="#">Dicas de exercícios</a></li>
             <li><a href="#">Ingestão de Água</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#">Contato</a></li>˝
         </ul>
     </nav>
     </div>
@@ -31,11 +32,53 @@
     <div class="container" style="width: 80%;">
     <div class="row gx-5" style="height: 1103px;">
 
-    <div class="col-5 p-0 container-flex">
+    <div class="col-5 p-0 container-left">
         <div><h1>Descubra agora mesmo o seu Índice de Massa Corporal.</h1></div>
-        <div><h3>Calcule seu IMC e descubra a dieta ideal para o seu dia a dia. Aprenda a ter hábitos saudáveis com as nossas dicas de exercício e melhore a sua saúde.</h3></div>
+
+        <div><p>Calcule seu IMC e descubra a dieta ideal para o seu dia a dia. Aprenda a ter hábitos saudáveis com as nossas dicas de exercício e melhore a sua saúde.</p></div>
+
+        <div><p class="fw-bold"><a href="#">SAIBA MAIS</a></p></div>
     </div>  
-        
+
+    <div class="col-2 p-0 "></div>
+    
+    <div class="col-5 p-0 container-right">
+        <div class="container-imc"> 
+            <p class="text-center">Calculadora do Índice de Massa Corporal</p> 
+
+            <form  action="/index.html" target="_self" method="get">
+            <label class="py-2" for="peso">Peso (kg)</label>    
+            <input style="width: 50%;" type="number" id="peso" name="peso" max="200">
+            
+            <div class="py-3"></div>    
+            
+            <label class="py-2" for="altura">Altura (m)</label>
+            <input style="width: 50%;" type="number" id="altura" name="altura" max="2.50">
+            
+            <div class="py-3"></div> 
+            
+            <button type="button">CALCULAR</button>
+            </form>  
+        </div>
+    </div>
+
+    <div class="col-12 p-0 ">
+        <h1>Por que calcular o seu IMC?</h1>
+
+        <div class="container-mid">
+        <div class="col-5"><p>Ajuda a identificar possíveis excessos ou deficiências de peso.</p></div>
+   
+        <div class="col-5"><p>Ao conhecer o seu IMC, é possível tomar medidas preventivas e adotar hábitos mais saudáveis.</p></div>
+
+       
+        </div>
+
+    </div>
+
+
+
+
+
     </div>    
     </div>           
     </section>
