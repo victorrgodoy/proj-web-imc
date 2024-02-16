@@ -1,18 +1,18 @@
 article {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
   margin: 0 auto;
-  align-items: center;
+  gap: 20px;
 }
 
 .introducao {
-  grid-column: 1 / 6;
+  grid-column: 1;
   padding: 10px 20px;
 }
 
 .introducao h1 {
-  font-size: 36px;
+  font-size: 30px;
   padding: 30px 0px;
   line-height: 1.3;
 }
@@ -35,76 +35,110 @@ article {
   transition: 0.3s;
 }
 
+.introducao-2 {
+  grid-column: span 2;
+  display: flex;
+  padding: 10px 20px;
+  gap: 50px;
+}
+
 .box-imc {
-  grid-column: 7 / 13;
   background-color: #e5faf1;
   border-radius: 10px;
-  padding: 20px 0px;
-  gap: 10px;
-  margin: 10px 10px;
-  height: 500px;
+  height: 360px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 10px 10px #96cec6;
+  box-shadow: 1px 1px 1px 1px #96cec6;
 }
 
 .calculadora-imc {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 0px 60px;
   display: grid;
   grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
 }
 
 .calculadora-imc p {
   grid-column: 1 / 3;
-  font-size: 24px;
   text-align: center;
+  font-size: 20px;
 }
 
 label {
   grid-column: 1;
-  padding: 25px 0px;
   font-weight: 300;
   font-size: 20px;
+  padding: 5px 0px;
 }
 
 input {
-  margin: 15px 10px;
-  padding: 10px;
+  grid-column: 2;
   border-radius: 5px;
   max-width: 100px;
   grid-column: 2;
   border: 2px solid gainsboro;
+  margin: 3px 0px;
+  padding: 10px 10px;
 }
 
 #button {
-  max-width: 230px;
-  padding: 15px 20px;
+  max-width: 100%;
+
   background-color: #276773;
   color: #f2f2f2;
-  margin: 0px 0px;
-  grid-column: 1 / 3;
+  padding: 15px 30px;
+  grid-column: span 2;
   font-weight: bold;
+  justify-self: stretch;
 }
 
 table {
-  margin: 0px 60px;
+  background-color: #e5faf1;
+  border-radius: 3px;
   text-align: center;
   border: 1px solid black;
-  font-size: 15px;
-  max-width: 100%;
+  height: 360px;
+  font-size: 18px;
+  width: 100%;
 }
 
 table th,
 td {
   border: 1px solid black;
+  padding: 0px 20px;
 }
 
-@media (max-width: 1090px) {
-  article {
+@media (max-width: 820px) {
+  .introducao {
+    grid-column: span 2;
+  }
+  .introducao-2 {
     display: flex;
     flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .box-imc {
+    height: auto;
+  }
+
+  .calculadora-imc {
+    grid-template-columns: auto auto 1fr;
+    padding: 30px;
+  }
+
+  .calculadora-imc p,
+  label {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  #button {
+    grid-column: span 2;
   }
 }
