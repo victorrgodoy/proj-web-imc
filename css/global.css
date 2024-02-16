@@ -25,3 +25,7 @@ img {
 a {
   text-decoration: none;
 }
+
+article {
+  padding: 40px 0px;
+}
