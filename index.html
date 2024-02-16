@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMC Saudável</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <p id="logo">LOGO</p>
       <nav>
+        <p>LOGO</p>
         <ul>
           <li><a href="#">Dicas de exercícios</a></li>
           <li><a href="#">Ingestão Água</a></li>
@@ -20,17 +20,57 @@
 
     <main>
       <article>
-        <div class="conteudo-imc">
+        <div class="introducao">
           <h1>Descubra agora mesmo o seu Índice de Massa Corporal</h1>
           <p>
             Calcule seu IMC e descubra a dieta ideal para o seu dia a dia.
-            <br />Aprenda a ter hábitos saudáveis com as nossas dicas de
-            exercício e melhore a sua saúde.
+            Aprenda a ter hábitos saudáveis com as nossas dicas de exercício e
+            melhore a sua saúde.
           </p>
-          <p><a href="SAIBA MAIS">SAIBA MAIS</a></p>
+          <p><a href="#">SAIBA MAIS</a></p>
         </div>
-        <div class="calculadora-box">
-          <div class="calculadora-imc"></div>
+        <div class="box-imc">
+          <div class="calculadora-imc">
+            <p>Calculadora do Índice de Massa Corporal</p>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" />
+
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" name="altura" />
+
+            <input type="submit" id="button" value="CALCULAR" />
+          </div>
+          <table>
+            <tr>
+              <th>IMC</th>
+              <th>Classificação</th>
+            </tr>
+            <tr>
+              <td>Abaixo de 18,5</td>
+              <td>Abaixo do peso</td>
+            </tr>
+            <tr>
+              <td>Entre 18,6 e 24,9</td>
+              <td>Peso ideal</td>
+            </tr>
+            <tr>
+              <td>Entre 25,0 e 29,9</td>
+              <td>Levemente acima do peso</td>
+            </tr>
+            <tr>
+              <td>Entre 30,0 e 34,9</td>
+              <td>Obesidade grau I</td>
+            </tr>
+            <tr>
+              <td>Entre 34,0 e 39,9</td>
+              <td>Obesidade grau II</td>
+            </tr>
+            <tr>
+              <td>Acima de 40</td>
+              <td>Obesidade grau III</td>
+            </tr>
+          </table>
         </div>
       </article>
     </main>
